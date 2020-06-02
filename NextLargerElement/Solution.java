@@ -24,7 +24,6 @@ static void find(int[] array,int start,int end){
   }
   else{
        if(array[end]>array[start]){
-
          arrayAnswer[start]=array[end];
          find(array,start+1,start+1);
        }
