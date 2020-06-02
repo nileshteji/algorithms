@@ -38,7 +38,7 @@ public class Solution {
 		for (int c = 1; c <= m; c++) { 
 			/* Check if assignment of color c to v is fine*/
 			if (isSafe(v, graph, color, c)) { 
-				color[v] = c; 
+				  color[v] = c; 
 
 				/* recur to assign colors to rest 
 				of the vertices */
