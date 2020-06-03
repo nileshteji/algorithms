@@ -18,6 +18,12 @@ public class Solution{
 
    stack.push(arr[start]);
 
+   for(int)
+
+
+
+
+
 
 
 
