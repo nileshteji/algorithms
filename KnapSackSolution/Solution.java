@@ -16,7 +16,6 @@ class Solution{
 
            // This is the case where the whole coding is done
            // in this we will take the value and weight of the previous element.
-
            dp[i][j] = Math.max(value[i - 1] + dp[i - 1][j - weight[i - 1]],dp[i - 1][j]);
          }
          else{
