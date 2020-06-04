@@ -1,5 +1,5 @@
 import java.util.*;
-// this is weather the following sequence is bitonisqquence or not 
+// this is weather the following sequence is bitonisqquence or not
 
 public class Solution{
 public static void main(String[] args) {
@@ -7,7 +7,7 @@ public static void main(String[] args) {
     int[] array={1,3,5,4,2,1};
     boolean increasing=true;
     boolean decreasing=true;
-    
+
 int i=0;
 int j =array.length-1;
 int index=0;
@@ -15,7 +15,7 @@ int index=0;
 
 
 // 1 3 5 4 2 1
-//     i j 
+//     i j
    while(i<j-1 && increasing && decreasing  && i < array.length && j>0){
 
     if(array[i]<array[i+1]){
@@ -31,7 +31,7 @@ int index=0;
     else{
         decreasing=false;
     }
-    
+
 
    }
 
