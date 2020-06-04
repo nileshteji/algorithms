@@ -2,7 +2,7 @@
 // array sum
 import java.io.*;
 
-class GFG {
+class Solution {
 
 	static int maxSubArraySum(int a[], int size)
 	{
