@@ -1,6 +1,6 @@
 class Solution{
   public static void main(String[] args) {
-new Solution().subArray(new int[]{9,1,2,3,7},10);
+new Solution().subArray(new int[]{9,6,2,3,7},10);
   }
 
 
@@ -23,9 +23,7 @@ while(curr_sum>k && start<i-1){
 
 
   if(curr_sum==k){
-    int p=i-1;
-    System.out.print(start+" "+p);
-    return;
+  res++;
 
 
 
@@ -37,6 +35,9 @@ while(curr_sum>k && start<i-1){
 
   }
 }
+
+
+System.out.println(res);
 
 
 
