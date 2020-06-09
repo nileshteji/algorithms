@@ -1,5 +1,3 @@
-/* Dynamic Programming Java implementation of Coin
-Change problem */
 import java.util.Arrays;
 
 class CoinChange
@@ -11,7 +9,7 @@ class CoinChange
 
 		Arrays.fill(table, 0); //O(n)
     table[0] = 1;
-    
+
 
 		for (int i=0; i<m; i++)
 			for (int j=S[i]; j<=n; j++)
