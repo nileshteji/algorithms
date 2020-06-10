@@ -12,6 +12,7 @@ int start=0;
 int res=0;
 
 
+
 for(int i=1;i<=array.length;i++){
 
 while(curr_sum>k && start<i-1){
