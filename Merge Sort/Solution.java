@@ -11,18 +11,16 @@ static void merge(int[] array,int l,int m ,int r){
           int L[] = new int[n1];
           int R[] = new int[n2];
 
-          /*Copy data to temp arrays*/
+        
           for (int i = 0; i < n1; ++i)
               L[i] = arr[l + i];
           for (int j = 0; j < n2; ++j)
               R[j] = arr[m + 1 + j];
 
-          /* Merge the temp arrays */
 
-          // Initial indexes of first and second subarrays
           int i = 0, j = 0;
 
-          // Initial index of merged subarry array
+
           int k = l;
           while (i < n1 && j < n2) {
               if (L[i] <= R[j]) {
