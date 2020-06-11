@@ -4,6 +4,7 @@ class Solution {
     int two=0;
     public void sortColors(int[] nums) {
         
+        
         for(int i :nums){
             if(i==0){
                 Zero++;
