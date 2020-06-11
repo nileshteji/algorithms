@@ -1,4 +1,4 @@
-import java.util.*;
+ import java.util.*;
 public class Solution {
 
 
@@ -18,7 +18,7 @@ public class Solution {
 
        System.out.println(a);
 
-   
+
        while(answer>0){
            temp.add(answer%10);
            answer=answer/10;
