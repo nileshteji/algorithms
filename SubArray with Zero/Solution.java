@@ -1,7 +1,5 @@
 import java.util.HashMap;
 
-import org.graalvm.compiler.debug.CSVUtil.Escape;
-
 public class Solution {
     public static void main(String[] args) {
         int arr[] = { 15, -2, 2, -8, 1, 7, 10, 23 };
@@ -15,30 +13,30 @@ public class Solution {
 
         for (int i = 0; i < array.length; i++) {
 
-
-            if(array[i]==0 && current_Sum==0){
+            if (array[i] == 0 && current_Sum == 0) {
                 maxLength++;
 
+            } else if (array[i] == 0) {
+                maxLength = i + i;
             }
-            else if(array[i]==0){
-                maxLength=i+i;  
-            }
-           
 
-           Integer a=hashMap.get(current_Sum);
+            Integer a = hashMap.get(current_Sum);
 
-
-
-           if(a==null){
-maxLength=Math.max(maxLength,i-a);
-           }
-           else{
+            if (a == null) {
+                maxLength = Math.max(maxLength, i - a);
+            } else {
                 hashMap.put(current_Sum, i);
-           }
-    
-
+            }
 
         }
 
     }
 }
+
+//TODO:Full Explaination
+
+// So what we will do is we will be using 
+
+
+
+

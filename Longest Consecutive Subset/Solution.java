@@ -15,7 +15,7 @@ public class Solution {
 
 
 
-        for(int i :set){
+        
 
 
            
@@ -28,13 +28,13 @@ public class Solution {
         // Then check for next elements 
         // in the sequence 
         int j = arr[i]; 
-        while (S.contains(j)) 
+        while (set.contains(j)) 
             j++; 
 
         // update  optimal length if this 
         // length is more 
-        if (ans < j - arr[i]) 
-            ans = j - arr[i]; 
+        if (length < j - arr[i]) 
+            length = j - arr[i]; 
     } 
 
 
@@ -48,7 +48,6 @@ public class Solution {
 
 
 
-    }
 
 
     // In this hashing technique will be used for we will use a set to store the data 
