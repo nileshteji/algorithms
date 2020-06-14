@@ -5,7 +5,7 @@
 
     public void remove(ListNode head,int n){
   
-  ListNode start = new ListNode(0);
+    ListNode start = new ListNode(0);
     ListNode n1 = start, n2 = start;
     n2.next = head;
     
@@ -24,3 +24,10 @@
 }
 
 }
+
+
+// 1 2 3 4 5
+// In this problem we will take 2 pointers 
+// One pointer will have a gap of n from the slow pointer 
+// after that we will loop till the fast pointer doesnot come to the end 
+// the slow pointer will be before the element which needs to be deleted.
