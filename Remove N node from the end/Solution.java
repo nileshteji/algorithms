@@ -1,9 +1,15 @@
   
-  
+  class ListNode{
+      int val;
+      ListNode next;
+      ListNode(int data ){
+data=val;
+      }
+  }
   class Solution{
 
 
-    public void remove(ListNode head,int n){
+    public ListNode remove(ListNode head,int n){
   
     ListNode start = new ListNode(0);
     ListNode n1 = start, n2 = start;
@@ -21,6 +27,10 @@
     //time to change
     n1.next = n1.next.next;
     return start.next;
+}
+
+public static void main(String[] args) {
+
 }
 
 }
