@@ -13,7 +13,7 @@ class Solution {
       //for the calculation we will tell the min of the both array 
       // for example we have building of height 1 and the maxium on left side and right side is 2 and 3 respectively 
       // we will take the min   of both the array and minus with the current building 
-      // we will do this for every building 
+      // we will do this for every building a
 
        int[] left=new int[height.length];
        int[] right=new int[height.length];
