@@ -33,7 +33,7 @@ class LinkedList {
 		list.head.next.next = new Node(4); 
         list.head.next.next.next = new Node(20); 
         list.printList(head); 
-        Node headTemp=head;
+        Node headTemp=head;       
         System.out.println();
         list.printList(headTemp);
 		
