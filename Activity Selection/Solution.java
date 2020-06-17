@@ -25,6 +25,8 @@ class ActivitySelection
 	// driver program to test above function 
 	public static void main(String[] args) 
 	{ 
+        // This is only when the Activties are sorted otherwise we have to sort the activities 
+        // which will lead to the creation of the POJO Class.
 	int s[] = {1, 3, 0, 5, 8, 5}; 
 	int f[] = {2, 4, 6, 7, 9, 9}; 
 	int n = s.length; 
