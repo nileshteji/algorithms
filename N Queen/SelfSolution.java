@@ -51,7 +51,7 @@ return false;
         }
 
 
-
+// In this we will be putting the queen on different row   so if see we cannot put anywhe
         for(int i =0;i<board.length;i++){
             if(isSafe(board, i, col)){
                 board[i][col]=1;
@@ -61,6 +61,9 @@ return false;
                 }
 
                 board[i][col]=0;
+            }
+            else{
+                return false;
             }
         }
 
