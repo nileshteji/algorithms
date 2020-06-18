@@ -60,17 +60,9 @@ class LinkedList
 			return root; 
 		}
 			
-        
+        // In this we have recived the root 
 		root.right = flatten(root.right); 
-		
-		
-		
-
-
-	
-
-		
-		root = merge(root, root.right); 
+	    root = merge(root, root.right); 
 
 		 
 		return root; 

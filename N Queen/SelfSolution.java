@@ -62,9 +62,7 @@ return false;
 
                 board[i][col]=0;
             }
-            else{
-                return false;
-            }
+           
         }
 
 
