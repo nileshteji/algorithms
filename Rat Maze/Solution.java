@@ -5,7 +5,7 @@ public class Solution {
 static int N;
 
     static boolean safe(int[][] maze,int x,int y){
-        if(x>0 && y>0 && x<N && y<N &&maze[x][y]==1)
+        if(x>0 && y>0 && x<N && y<N && maze[x][y]==1)
         {
 return true;
         }
@@ -29,13 +29,25 @@ return true;
             return true;
         }
 
+    if(safe(maze, x, y)){
+        maze[x][y]=1;
+        if(mazeUtility(maze, x+1, y)){
+            return true;
+        }
+        if(mazeUtility(maze, x, y+1)){
+            return true;
+        }
+
+
+        maze[x][y]=0;
 
 
 
 
 
 
-
+        return false;
+    }
 
         return false;
     }
