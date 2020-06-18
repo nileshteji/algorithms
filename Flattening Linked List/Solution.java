@@ -55,10 +55,19 @@ class LinkedList
 	Node flatten(Node root) 
 	{ 
 		
-		if (root == null || root.right == null) 
+		if (root == null || root.right == null) {
+		System.out.println(root.data);
 			return root; 
-
+		}
+			
+        
 		root.right = flatten(root.right); 
+		
+		
+		
+
+
+	
 
 		
 		root = merge(root, root.right); 
