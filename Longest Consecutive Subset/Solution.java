@@ -21,10 +21,10 @@ public class Solution {
            
 
   // then update optimal length 
-  for (int i = 0; i < n; ++i) { 
+  for (int i = 0; i < arr.length; ++i) { 
     // if current element is the starting 
     // element of a sequence 
-    if (!S.contains(arr[i] - 1)) { 
+    if (!set.contains(arr[i] - 1)) { 
         // Then check for next elements 
         // in the sequence 
         int j = arr[i]; 

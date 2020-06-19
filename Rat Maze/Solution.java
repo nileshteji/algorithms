@@ -8,8 +8,7 @@ static int N;
            return true;
         }
         else{
-
-        return false;
+           return false;
         }
 
 
@@ -29,6 +28,10 @@ static int N;
             }
             return true;
         }
+
+
+
+        
 
     if(safe(maze, x, y)){
         solution[x][y]=1;
