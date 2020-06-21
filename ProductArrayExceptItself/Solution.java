@@ -12,7 +12,7 @@ public class Solution {
 
 
        //See the Flow 
-
+        
        // 1 1 5 30 210
       for(int i=1;i<leftproduct.length;i++){
            leftproduct[i]=array[i-1]*leftproduct[i-1];
