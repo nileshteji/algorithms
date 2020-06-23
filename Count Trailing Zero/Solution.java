@@ -20,8 +20,8 @@ int zeros=0;
 
 
 // we are looping till we are not getting i greater than or equal to the number
-for(int i=5;n/i>=1;i=i*5){
-  zeros=zeros+n/i;
+for(int i=5;a/i>=1;i=i*5){
+  zeros=zeros+a/i;
 }
 
 return zeros;
