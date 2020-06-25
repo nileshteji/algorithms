@@ -9,29 +9,35 @@ public class Solution{
     }
 
     private static void printMax(int[] arr, int length, int k) {
-
+        // It Stores the index of the array not the value of the array
         Deque<Integer> deque =new LinkedList<>();
 
 
         for(int i =0;i<k;i++){
           
-             while(!deque.isEmpty() && arr[i]>deque.peekLast())
+             while(!deque.isEmpty() && arr[i]>arr[deque.peek()])
                  deque.pollLast();
-             deque.add(arr[i]);
+             deque.add(i);
         }
 
 
-
-        for(int i =k ;i<length;i++){
-
-         
-
-            
+       for (int i = k; i < arr.length; i++) {
 
 
 
+        while(!deque.isEmpty() && deque.peek()<=i-k){
+                     deque.remove();
+                }
 
+        while (!deque.isEmpty() && arr[deque.peek()]<=arr[i]) {
+            deque.poll();
         }
+
+
+        deque.addLast(arr[i]);
+           
+       }
+
 
 
 

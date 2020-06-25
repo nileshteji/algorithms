@@ -6,7 +6,7 @@ import java.util.*;
 class Graph 
 { 
 	private int V; 
-	private LinkedList<Integer> adj[]; 
+	private LinkedList<Integer>[]  adj; 
 
 	Graph(int v) 
 	{ 
@@ -55,7 +55,7 @@ class Graph
 		} 
 	} 
 
-	// Driver method to 
+	
 	public static void main(String args[]) 
 	{ 
 
