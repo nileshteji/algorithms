@@ -1,13 +1,13 @@
- 
+
 import java.io.*; 
 import java.util.*; 
+
 
 class Graph 
 { 
 	private int V; 
 	private LinkedList<Integer> adj[]; 
 
-	
 	Graph(int v) 
 	{ 
 		V = v; 
@@ -16,12 +16,13 @@ class Graph
 			adj[i] = new LinkedList(); 
 	} 
 
+
 	void addEdge(int v,int w) 
 	{ 
 		adj[v].add(w); 
 	} 
 
-  
+    
 	void BFS(int s) 
 	{ 
 		 
@@ -78,4 +79,4 @@ class Graph
 		g.BFS(2); 
 	} 
 } 
-
+ 
