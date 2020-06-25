@@ -24,13 +24,13 @@ public class Solution{
        for (int i = k; i < arr.length; i++) {
 
 
-
+         //This tells us the range 0f the window
         while(!deque.isEmpty() && deque.peek()<=i-k){
-                     deque.remove();
+                     deque.removeFirst(); 
                 }
-
+         // This tell us the maxium of the window
         while (!deque.isEmpty() && arr[deque.peek()]<=arr[i]) {
-            deque.poll();
+            deque.removeLast();
         }
 
 
