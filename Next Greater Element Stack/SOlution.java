@@ -1,6 +1,3 @@
-//Java program to print next 
-//greater element using stack 
-
 public class SOlution
 { 
 	static class stack 
@@ -72,6 +69,7 @@ public class SOlution
 				stack is not empty */
 				while (element < next) 
 				{ 
+					//This element is the next greater element 
 					System.out.println(element + " --> " + next); 
 					if (s.isEmpty() == true) 
 						break; 
@@ -84,8 +82,7 @@ public class SOlution
 					s.push(element); 
 			} 
 
-			/* push next to stack so that we can find next 
-			greater for it */
+			//This needs to be done always
 			s.push(next); 
 		} 
 
