@@ -1,11 +1,3 @@
-/* We can use Java inbuilt Deque as a double 
-ended queue to store the cache keys, with 
-the descending time of reference from front 
-to back and a set container to check presence 
-of a key. But remove a key from the Deque using 
-remove(), it takes O(N) time. This can be 
-optimized by storing a reference (iterator) to 
-each key in a hash map. */
 import java.util.Deque; 
 import java.util.HashSet; 
 import java.util.LinkedList; 
@@ -50,6 +42,10 @@ public class Solution {
 			} 
 			dq.remove(index); 
 		} 
+
+
+
+		//This will run always 
 		dq.push(x); 
 		
 	} 

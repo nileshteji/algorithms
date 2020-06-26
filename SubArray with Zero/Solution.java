@@ -25,7 +25,7 @@ class MaxLenZeroSumSub {
 		 
 			Integer prev_i = hM.get(sum); 
 
-			
+			//This is checking for the sum if it is present in the hashmpa or not 
 			if (prev_i != null) 
 				max_len = Math.max(max_len, i - prev_i); 
 			else 

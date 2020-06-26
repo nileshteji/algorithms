@@ -41,7 +41,7 @@ class PrintAllPalindrome {
 				currPart.addLast(input.substring(start, i + 1));
 
 				allPalPartitonsUtil(allPart, currPart, i + 1, n, input);
-				
+
 				currPart.removeLast();
 			}
 		}
