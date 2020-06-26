@@ -40,6 +40,12 @@ Deque<Coordinates> deque=new LinkedList<>();
                 }
         }
     }
+    //Delimeter is to Seperate the current frame rootten oragenges 
+    // It will removed and inserted agin after the first frame of oranges is rotten
+    
+
+
+   
     
 
 

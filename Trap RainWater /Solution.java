@@ -7,8 +7,8 @@ class Solution {
         
         
 
-
-
+      
+      // In this approach we have to find the total water stored not the maxium water stored
       // In this problem we will create 2 array which will tell us the maxium height of the building on the each side
       //for the calculation we will tell the min of the both array 
       // for example we have building of height 1 and the maxium on left side and right side is 2 and 3 respectively 

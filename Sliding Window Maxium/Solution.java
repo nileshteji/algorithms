@@ -24,11 +24,15 @@ public class Solution{
        for (int i = k; i < arr.length; i++) {
 
 
+
+        // This prints the largest element from the previous window of the sliding
+        System.out.println(arr[deque.peek()]);
+
          //This tells us the range 0f the window
         while(!deque.isEmpty() && deque.peek()<=i-k){
                      deque.removeFirst(); 
                 }
-         // This tell us the maxium of the window
+         // This tell us the maxium of the window 
         while (!deque.isEmpty() && arr[deque.peek()]<=arr[i]) {
             deque.removeLast();
         }
