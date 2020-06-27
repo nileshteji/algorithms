@@ -28,9 +28,7 @@ class LIS
 
 		/* Pick maximum of all LIS values */
 
-    for(int index :lis){
-      System.out.println(index);
-    }
+  
 
 
 
