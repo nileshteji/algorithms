@@ -26,7 +26,7 @@ public class Solution {
         while(i<heights.length){
 
 
-            if(stack.isEmpty() ||  heights[stack.peek()]>heights[i]){
+            if(stack.isEmpty() ||  heights[stack.peek()]<=heights[i]){
                 stack.push(i++);
         }
             else{

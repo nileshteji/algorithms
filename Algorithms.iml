@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/MiddleElementLinkedList" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Xor Subarray" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Balancing Expression " isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/No of Subarray" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LargestNumber" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Clone Linked List with Random Pointer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Reverse Words In String" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Longest Palindromic SubString" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Reversing Linked List" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SubArray Sum" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/EquillabiriumPoint" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Linked List Sum" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GraphColoring" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fub series" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Remove N node from the end" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Merge Intervals " isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BitonicSubsequences" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Rotation Matrix" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Longest Increasing Subsequence" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Find Minium Number of Coins" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Palindrome Partioning" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Combination Sum One" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Rotten Oranges" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Rotation of LinkedList" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Z Algorithm for pattern matching" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProductArrayExceptItself" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Activity Selection" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Add one to Number" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RoadToZero" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Trap RainWater " isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Coin Change Algorithm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Two City Scheduling" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Job Sequencing" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Print Permutation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Flattening Linked List" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/KnapSackGreedyMethod" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/KnapSackSolution" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Find Duplicate Number" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Find Element in Sorted Array but Rotated" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BuySellStock" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/NextLargerElement" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/N Queen" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Rat Maze" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Subset Sum Problem" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Longest Consecutive SubString" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Largest Rectangle in Histogram" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Cataln Number" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Longest Common Subsequence" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SubArray with Zero" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LRU Cache" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Count Inversion" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BFS" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Median of Matrix" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SumOfSubArray" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Flights Question" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Reverse String" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DeletingNode" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Longest Consecutive Subset" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/IP Validation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/M coloring Problem " isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Merge Sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Reverse Linked List in Groups" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sliding Window Maxium" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Combination Sum " isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Find Majority Elements" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Count Trailing Zero" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Kadane Algorithm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Minium Number of Platforms" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SumLinkedList" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Longest Decresing Subsequence" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/K Element Sorted Array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Permuntations of String" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/NumberToRoman" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Next Greater Element Stack" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sort Colors " isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Largest Number" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
