@@ -31,6 +31,9 @@ static Node root;
     leftBST(root.right, level+1);
    } 
 
+  
+
+
     public static void main(String[] args) {
       Arrays.fill(arr, false);
 
