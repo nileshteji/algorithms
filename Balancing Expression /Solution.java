@@ -46,7 +46,7 @@ public class Solution {
         stack st = new stack();
 
         for (int i = 0; i < exp.length; i++) {
-
+            
             if (exp[i] == '{' || exp[i] == '(' || exp[i] == '[')
                 st.push(exp[i]);
 
