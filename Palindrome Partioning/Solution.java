@@ -3,6 +3,10 @@ import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
 
+
+
+
+
 class PrintAllPalindrome {
 
 	public static void main(String[] args) {
