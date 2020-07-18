@@ -1,3 +1,4 @@
+
 class Node 
 { 
 	int data; 
@@ -10,49 +11,42 @@ class Node
 	} 
 } 
 
- 
-class Height 
-{ 
-	int h; 
-} 
-
-
+/* Class to print the Diameter */
 class BinaryTree 
 { 
 	Node root; 
 
-	int diameterOpt(Node root, Height height) 
+	
+	int diameter(Node root) 
 	{ 
 		
-		Height lh = new Height(), rh = new Height(); 
-
 		if (root == null) 
-		{ 
-			height.h = 0; 
 			return 0; 
-		} 
-		
-		
-		int ldiameter = diameterOpt(root.left, lh); 
-		int rdiameter = diameterOpt(root.right, rh); 
 
 		
-		height.h = Math.max(lh.h, rh.h) + 1; 
+		int lheight = height(root.left); 
+		int rheight = height(root.right); 
 
-		return Math.max(lh.h + rh.h + 1, Math.max(ldiameter, rdiameter)); 
+		
+		int ldiameter = diameter(root.left); 
+		int rdiameter = diameter(root.right); 
+
+	
+		return Math.max(lheight + rheight + 1, 
+						Math.max(ldiameter, rdiameter)); 
+
 	} 
 
 	
 	int diameter() 
 	{ 
-		Height height = new Height(); 
-		return diameterOpt(root, height); 
+		return diameter(root); 
 	} 
 
-	
+
 	static int height(Node node) 
 	{ 
-		
+
 		if (node == null) 
 			return 0; 
 
@@ -61,7 +55,7 @@ class BinaryTree
 
 	public static void main(String args[]) 
 	{ 
-		/* creating a binary tree and entering the nodes */
+		
 		BinaryTree tree = new BinaryTree(); 
 		tree.root = new Node(1); 
 		tree.root.left = new Node(2); 
