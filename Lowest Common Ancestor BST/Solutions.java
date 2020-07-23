@@ -7,7 +7,9 @@ class Node{
         this.data=data;
     }
 }
-
+//IN this the node will return the value if it is same to value we are searching will return the root from the node and if
+// we recive eyword from both side then it means we have the lowest common ancestor and whereas it is recieved only from one side the non n
+//null value is the Lowest Common Ancestor
 public class Solutions {
     static Node root;
 
