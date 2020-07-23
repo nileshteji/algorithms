@@ -13,7 +13,6 @@ int j =array.length-1;
 int index=0;
 
 
-
 // 1 3 5 4 2 1
 //     i j
    while(i<j-1 && increasing && decreasing  && i < array.length && j>0){
