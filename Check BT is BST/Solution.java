@@ -18,21 +18,27 @@ public class Solution {
     public static void main(String[] args) {
         root=new Node(1);
         root.left=new Node(2);
+        root.left.left=new Node(3);
         root.right=new Node(3);
 
-        check(root);
+        check(root,Integer.MIN_VALUE,);
     }
 
-
-    public static boolean check(Node root,int left,int right){
-        if(root==null){
-            return true;
-        }
-        if(root.data<left || root.data>right){
-            return false;
-        }
-        else{
-            
-        }
+    public boolen check(Node root,int min,int max){
+       if(root==null){
+        return true;
     }
+    if(node.data<left || node.data>right){
+        return false;
+    }
+    else{
+        // In this we check the left tree should have the minium value of the anything but the max value for the left subtree should be node.data-1
+        // Similarly for the right subtree the minium value should be the root node and the maxium can be anything 
+        return check(node.left,left,node.data-1) && check(node.right,node.data+1,max);
+    }
+}
+
+
+
+
 }
