@@ -25,7 +25,7 @@ LDS(new int[]{
 
 
     for(int i=1;i<n;i++){
-      for(int j=0;j<i;j++){
+      for(int j  =0;j<i;j++){
         if(array[i]<array[j] && lds[i] < lds[j] + 1){
                lds[i]=lds[j]+1;
         }
