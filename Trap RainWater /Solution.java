@@ -34,6 +34,7 @@ class Solution {
             res=res+Math.min(left[i],right[i])-height[i];
         }
         
+        
         return res;
     }
 }

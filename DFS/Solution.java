@@ -7,7 +7,7 @@ class Graph
 	private int V; 
      // neighbour linked list for every node;
 	private LinkedList<Integer> adj[]; 
-   Graph(int v) 
+    Graph(int v) 
 	{ 
 		V = v; 
 		adj = new LinkedList[v]; 

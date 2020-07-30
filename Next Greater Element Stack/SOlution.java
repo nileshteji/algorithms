@@ -45,8 +45,6 @@ public class SOlution
 		stack s = new stack(); 
 		s.top = -1; 
 		int element, next; 
-
-		
 		s.push(arr[0]); 
 
 		for (i = 1; i < n; i++) 
