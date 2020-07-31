@@ -27,7 +27,6 @@ class Graph {
 
         int n;
 
-        // Recur for all the vertices adjacent to this vertex
         Iterator<Integer> i = adj[v].iterator();
         while (i.hasNext()) {
             n = i.next();
@@ -36,13 +35,13 @@ class Graph {
         }
     }
 
-    // Function that returns reverse (or transpose) of this graph
     Graph getTranspose() {
         Graph g = new Graph(V);
         for (int v = 0; v < V; v++) {
-            // Recur for all the vertices adjacent to this vertex
+       
             Iterator<Integer> i = adj[v].listIterator();
             while (i.hasNext())
+            // chaanging the direction of each vertex 
                 g.adj[i.next()].add(v);
         }
         return g;
