@@ -1,5 +1,6 @@
 import java.beans.DesignMode;
 import java.util.ArrayList;
+import java.util.Arrays;
 class Edge{
 int destination;
 int weight;
@@ -29,14 +30,37 @@ class Graph {
 
 class Solution {
 
-    static void printGraph(Graph graph){
 
-        for(int i =0;i<=graph.vertices;i++){
-            ArrayList<Edge> arrayList=graph.adj.get(i);
-            for(Edge edge: arrayList){
-                System.out.println(i +" " + edge.destination +" with "+ edge.weight);
+    static void DFS(int source,boolean[] visited,Graph graph){
+        visited[source]=true;
+        System.out.print(source);
+
+        ArrayList<Edge> adj=graph.adj.get(source);
+
+
+        for(Edge edge : adj){
+            if(!visited[edge.destination]){
+                  DFS(edge.destination, visited, graph);
             }
         }
+
+
+        
+
+    }
+
+    static void DFSUtil(Graph graph){
+         boolean[] visited=new boolean[graph.vertices];
+         Arrays.fill(visited, false);
+
+        for(int i =0;i < graph.vertices;i++){
+            if(!visited[i]){
+            DFS(i,visited,graph);
+            
+          }
+        }
+
+    
     }
 
 
@@ -46,12 +70,12 @@ class Solution {
     public static void main(String[] args) {
         // Since we use
         Graph graph=new Graph(4);
-        graph.addEdge(1,2,10);
-        graph.addEdge(1, 3, 15);
-        graph.addEdge(2,3,16);
-        graph.addEdge(3, 4, 20);
-        graph.addEdge(4, 2, 35);
-        printGraph(graph);
+        graph.addEdge(0,1,10);
+        graph.addEdge(0, 2, 15);
+        graph.addEdge(1,2,16);
+        graph.addEdge(2, 3, 20);
+        graph.addEdge(3, 1, 35);
+        DFSUtil(graph);
 
     }
 
