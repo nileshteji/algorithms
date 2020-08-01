@@ -1,6 +1,5 @@
 import java.util.Arrays;
 
-import sun.jvm.hotspot.utilities.IntegerEnum;
 
 /**
  * @author Nilesh Teji
@@ -62,11 +61,18 @@ public class Solution {
 
         distance[src] = 0;
 
+        for(int i =0;i<graph.length;i++){
+
+            /**
+             * we will extract the minium value from the non fincalized vertices and make it finalized 
+             * 
+             */
         int u = findMinium(distance, finalized, graph.length);
+
         finalized[u] = true;
 
         // this will undergo every adacent vertex of the u vertex
-        for (int i = 0; i < graph.length; i++) {
+        for (int j = 0; j < graph.length; j++) {
 
             // Explaination to the if condition
             // the distance of the source to the vertex should be less than the value which
@@ -75,11 +81,16 @@ public class Solution {
             // and the destination vertex should not be finalized
             // there should be some connection to the vertex from the source
 
-            if (graph[u][v] < distance[v] && distance[u] != Integer.MAX_VALUE && !finalized[v] && graph[u][v] != 0) {
-                distance[v] = graph[u][v];
+            if (distance[u]+graph[u][j] < distance[j] && distance[u] != Integer.MAX_VALUE && !finalized[j] && graph[u][j] != 0) {
+                distance[j] = graph[u][j]+distance[u];
             }
         }
 
     }
+
+    for (int e :distance){
+        System.out.println(e);
+    }
+}
 
 }
