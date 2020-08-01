@@ -2,6 +2,15 @@ import java.util.Arrays;
 
 import sun.jvm.hotspot.utilities.IntegerEnum;
 
+/**
+ * @author Nilesh Teji
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
 public class Solution {
     public static void main(String[] args) {
         int graph[][] = new int[][] { { 0, 4, 0, 0, 0, 0, 0, 8, 0 }, { 4, 0, 8, 0, 0, 0, 0, 11, 0 },
@@ -15,6 +24,14 @@ public class Solution {
 
     }
 
+    /**
+     * 
+     * @param distance  this is array which contains the distance from the source to
+     *                  i in the array index[i];
+     * @param finalized this help is to find the distance of which node is finalized
+     * @param length    No of Vertices
+     * @return minium node with the distance
+     */
     static int findMinium(int[] distance, boolean[] finalized, int length) {
 
         int min = Integer.MAX_VALUE;
@@ -25,6 +42,7 @@ public class Solution {
             if (!finalized[i] && distance[i] <= min) {
                 answer = i;
                 min = distance[i];
+
             }
         }
         return answer;
@@ -36,7 +54,7 @@ public class Solution {
         // we could use a better data structure for this
 
         int[] distance = new int[graph.length];// instead we can use a hashmap for the following distance //set can also
-                                               // be used 
+                                               // be used
         boolean[] finalized = new boolean[graph.length];
 
         Arrays.fill(distance, Integer.MAX_VALUE);
@@ -45,6 +63,7 @@ public class Solution {
         distance[src] = 0;
 
         int u = findMinium(distance, finalized, graph.length);
+        finalized[u] = true;
 
         // this will undergo every adacent vertex of the u vertex
         for (int i = 0; i < graph.length; i++) {
