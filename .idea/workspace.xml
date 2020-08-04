@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40db49c2-a4ae-4959-8511-45575362b0c4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InvertBinaryTree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/InvertBinaryTree/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lowest Common Ancestor BST/Solutions.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lowest Common Ancestor BST/Solutions.java" afterDir="false" />
-    </list>
+    <list default="true" id="40db49c2-a4ae-4959-8511-45575362b0c4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +55,7 @@
       <workItem from="1595521039633" duration="188000" />
       <workItem from="1595521257033" duration="508000" />
       <workItem from="1595521795287" duration="647000" />
+      <workItem from="1596339525038" duration="24000" />
     </task>
     <servers />
   </component>
@@ -94,10 +87,11 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="397" y="199" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1595429254190" />
-    <state x="264" y="182" key="new project wizard" timestamp="1595521745299">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state x="257" y="201" key="new project wizard" timestamp="1596339547886">
+      <screen x="0" y="23" width="1742" height="1097" />
     </state>
     <state x="264" y="182" key="new project wizard/0.0.1792.1120@0.0.1792.1120" timestamp="1595521745299" />
+    <state x="257" y="201" key="new project wizard/0.23.1742.1097@0.23.1742.1097" timestamp="1596339547886" />
     <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1595521605245">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>

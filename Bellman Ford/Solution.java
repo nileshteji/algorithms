@@ -55,6 +55,8 @@ public class Solution {
 
         int count=0;
         while(count++ < graph.vertices){
+
+            // the complexity here would be v2
         for (int i =0;i<graph.vertices;i++){
             ArrayList<Edge> edge=graph.adj.get(i);
             for(Edge edge2: edge){
