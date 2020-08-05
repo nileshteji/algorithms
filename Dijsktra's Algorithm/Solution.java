@@ -23,6 +23,7 @@ public class Solution {
 
     }
 
+
     /**
      * 
      * @param distance  this is array which contains the distance from the source to
@@ -72,6 +73,7 @@ public class Solution {
         finalized[u] = true;
 
         // this will undergo every adacent vertex of the u vertex
+        // if we use a adjacency list we will be able to remove this loop 
         for (int j = 0; j < graph.length; j++) {
 
             // Explaination to the if condition
