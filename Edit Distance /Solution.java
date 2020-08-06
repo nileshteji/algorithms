@@ -10,14 +10,14 @@ System.out.println(an);
         
         for(int i =0;i<=b.length();i++){
             for(int j =0;j<=a.length();j++){
-                if(i==0 ){
+                if(i==0){
                     dp[i][j]=j;
                 }
                 else if(j==0){
                     dp[i][j]=i;
                 }
                 else{
-                    if(a.charAt(i-1)==b.charAt(j-1)){
+                    if(b.charAt(i-1)==a.charAt(j-1)){
                         dp[i][j]=dp[i-1][j-1];
                     }
                     else{
