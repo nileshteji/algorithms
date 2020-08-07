@@ -64,6 +64,7 @@ public class Solution {
 
        array[i]=true;
       Iterator<Integer> iterator= g.adj[i].iterator();
+      //this it self takes cares of the null factor
       while(iterator.hasNext()){
          if(!array[iterator.next()]){
              topoUtil(array, stack, iterator.next());

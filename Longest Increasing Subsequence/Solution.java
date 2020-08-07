@@ -26,7 +26,7 @@ class LIS
 						if ( arr[i] > arr[j] &&	lis[i] < lis[j] + 1)
 				          	lis[i] = lis[j] + 1;
 
-		/* Pick maximum of all LIS values */
+		
 
   
 
@@ -47,4 +47,4 @@ class LIS
 							+ lis( arr, n ) + "\n" );
 	}
 }
-/*This code is contributed by Rajat Mishra*/
+

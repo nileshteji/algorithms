@@ -19,7 +19,7 @@ public class Solution {
       // Coin Change Dynammic Programming Question
 
 List<Integer> list=new ArrayList<Integer>();
-       int res=0;
+       
       for(int i=deno.length-1;i>=0;i--){
 
         
