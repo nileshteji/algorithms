@@ -1,41 +1,29 @@
-// In this Tortoise Hare Algorithm  
 
-//Slow pointer and Fast Pointer 
-
-
-// Same as Finding the Middle Element Linked List 
-
-
-// But we have to check if the pointer are same or not 
 
 class Node{
     int data;
-Node next;
-}
+    Node next;
 
+    public Node(int data){
+        this.data=data;
+    }
+}
 class Solution{
+    public static void main(String[] args) {
+        Node root=new Node(1);
+        root.next=new Node(2);
+        root.next.next=new Node(3);
+        root.next.next.next=new Node(4);
+        root.next.next.next.next=new Node(5);
 
 
-static boolean check(Node node)
-{
- Node fastPointer=node;
- Node slowPointer=node;
- 
- 
+       Node slow=root;
+       Node fast=root;
+        while(fast!=null && fast.next!=null){
+            fast=fast.next.next;
+            slow=slow.next;
+        }
 
- while(fastPointer!=null && fastPointer.next!=null){
-     slowPointer=slowPointer.next;
-     fastPointer=fastPointer.next.next;
-
-     if(slowPointer==fastPointer){
-         return true;
-     }
-
- }
-
-//if it exits the loop then it means no loop is in the LinkedList
- return false;
-}
-
-
+        System.out.println(slow.data);
+    }
 }

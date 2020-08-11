@@ -25,9 +25,9 @@ class PrintAllPalindrome {
 		Deque<String> currPart = new LinkedList<String>();
 
 		allPalPartitonsUtil(allPart, currPart, 0, n, input);
-
+		
 		System.out.println(allPart);
-
+  
 	}
 
 	private static void allPalPartitonsUtil(ArrayList<ArrayList<String>> allPart, Deque<String> currPart, int start,

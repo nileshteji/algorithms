@@ -27,7 +27,7 @@ public class Solution {
     if (!set.contains(arr[i] - 1)) { 
         // Then check for next elements 
         // in the sequence 
-        int j = arr[i]; 
+       int j = arr[i]; 
         while (set.contains(j)) 
             j++; 
 
