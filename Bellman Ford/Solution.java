@@ -59,7 +59,7 @@ public class Solution {
             // the complexity here would be v2
         for (int i =0;i<graph.vertices;i++){
             ArrayList<Edge> edge=graph.adj.get(i);
-            for(Edge edge2: edge){
+               for(Edge edge2: edge){
                 if(distance[i]!=Integer.MAX_VALUE  && distance[i] + edge2.weight<distance[edge2.destination]){
                     distance[edge2.destination]=distance[i]+edge2.weight;
                 }
