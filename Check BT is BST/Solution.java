@@ -28,13 +28,13 @@ public class Solution {
        if(root==null){
         return true;
     }
-    if(node.data<left || node.data>right){
+    if(node.data<min || node.data>max){
         return false;
     }
     else{
         // In this we check the left tree should have the minium value of the anything but the max value for the left subtree should be node.data-1
         // Similarly for the right subtree the minium value should be the root node and the maxium can be anything 
-        return check(node.left,left,node.data-1) && check(node.right,node.data+1,max);
+        return check(node.left,min,node.data-1) && check(node.right,node.data+1,max);
     }
 }
 
