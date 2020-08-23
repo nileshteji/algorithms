@@ -18,9 +18,9 @@ public class EggSolver {
 
                 // This case if for finding the minium attemps 
                 for (int x = 1; x < i; x++) {
-                    // when the egg breaks ja
+                    // when the egg breaks j
                     final int brokenEggResult = results[x - 1][j - 1];
-                    // with one floor less 
+                 
                     final int EggSurvivedResult = results[i - x][j];
                     int temp = Math.max(brokenEggResult, EggSurvivedResult) + 1;
                     if (temp < results[i][j]) {
