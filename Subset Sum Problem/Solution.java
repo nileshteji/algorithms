@@ -1,6 +1,6 @@
 public class Solution {
 public static void main(String[] args) {
-    int set[] = {6>,3}; 
+    int set[] = {6,3,10}; 
     int sum = 9; 
     solve(set, sum);
 }

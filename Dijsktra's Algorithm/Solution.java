@@ -60,8 +60,7 @@ public class Solution {
 
         // we could use a better data structure for this
 
-        int[] distance = new int[graph.length];// instead we can use a hashmap for the following distance //set can also
-                                               // be used
+        int[] distance = new int[graph.length];
         boolean[] finalized = new boolean[graph.length];
 
         Arrays.fill(distance, Integer.MAX_VALUE);
