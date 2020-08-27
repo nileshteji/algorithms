@@ -19,14 +19,8 @@ public class Solution {
 
         // This stack is used to store the indices of the height of the rectangle
         Stack<Integer> stack=new Stack<>();
-
-
-
-
         while(i<heights.length){
-
-
-            if(stack.isEmpty() ||  heights[stack.peek()]<=heights[i]){
+        if(stack.isEmpty() ||  heights[stack.peek()]<=heights[i]){
                 stack.push(i++);
         }
             else{

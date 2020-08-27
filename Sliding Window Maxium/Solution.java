@@ -21,8 +21,7 @@ class Solution{
 
          for(int i=k;i<array.length;i++){
              System.out.println(deque.peek());
-   
-
+             
              while(!deque.isEmpty() && deque.peek()<=i-k){
                  deque.removeFirst();
              }
