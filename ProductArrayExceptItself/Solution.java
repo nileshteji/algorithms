@@ -1,7 +1,7 @@
 public class Solution {
     public static void main(String[] args) {
 
-
+                    
        int[] array={1,5,6,7,8};
        int[] leftproduct=new int[array.length];
        int[] rightproduct=new int[array.length];
@@ -11,9 +11,7 @@ public class Solution {
 
 
 
-       //See the Flow 
-        
-       // 1 1 5 30 210
+       
       for(int i=1;i<leftproduct.length;i++){
            leftproduct[i]=array[i-1]*leftproduct[i-1];
        }

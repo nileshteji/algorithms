@@ -7,11 +7,7 @@ public class SolutionSelf {
     public static void main(String[] args) {
         int[] array={2,-5,6,7,8};
        System.out.println( maxiumSubarray(array)  );
-        
-
-
-
-    }
+          }
 
 
    public static int  maxiumSubarray(int[] array){
