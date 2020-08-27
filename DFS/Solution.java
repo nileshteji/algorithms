@@ -45,8 +45,6 @@ class Graph
 	{ 
 		
 		boolean visited[] = new boolean[V]; 
-
-		 
 		DFSUtil(v, visited); 
 	} 
 

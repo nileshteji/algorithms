@@ -21,11 +21,11 @@ class Graph{
         }
     }
     public void addEdge(int src,int destination,int weight){
-        adj.get(src).add(new Edge(destination, weight))
+        adj.get(src).add(new Edge(destination, weight));
     }
 }
 public class Solution {
  public static void main(String[] args) {
-     
- }   
+     Graph graph=new Graph(vertices);
+     }   
 }

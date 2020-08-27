@@ -29,7 +29,7 @@ public class Solution {
 
 
         // We iterate over the different colors
-        for (int i = 0; i < m; i++) {
+        for (int i = 0; i <3; i++) {
             if (isSafe(graph, v, i)) {
                 colors[v] = i;
 
@@ -46,8 +46,19 @@ public class Solution {
 
     public static void main(String[] args) {
         Arrays.fill(colors, 0);
-        int graph[][] = { { 0, 1, 1, 1 }, { 1, 0, 1, 0 }, { 1, 1, 0, 1 }, { 1, 0, 1, 0 }, };
+        int graph[][] = { 
+            { 0, 1, 1, 1 }, 
+            { 1, 0, 1, 0 },
+             { 1, 1, 0, 1 }, 
+             { 1, 0, 1, 0 }, 
+            };
         // this no of colors
-        int m = 3;
+        int m = 2;
+        if(graphColoringUtility(graph, 0, m)){
+
+        }
+        else{
+            System.out.println("No a Bipartite Graph");
+        }
     }
 }
