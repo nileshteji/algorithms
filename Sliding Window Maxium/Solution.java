@@ -1,50 +1,39 @@
-import java.util.*;
+import java.util.Deque;
+import java.util.LinkedList;
 
-
-public class Solution{
+class Solution{
     public static void main(String[] args) {
-        int arr[] = { 12, 1, 78, 90, 57, 89, 56 }; 
-        int k = 3; 
-        printMax(arr, arr.length, k); 
+        int[] array={
+            1,2,3,1,4,5,2,3,6
+        };
     }
-
-    private static void printMax(int[] arr, int length, int k) {
-        // It Stores the index of the array not the value of the array
-        Deque<Integer> deque =new LinkedList<>();
-
-
-        for(int i =0;i<k;i++){
-          
-             while(!deque.isEmpty() && arr[i]>arr[deque.peek()])
-                 deque.pollLast();
+    static void sliding(int[] array,int k){
+        
+         Deque<Integer> deque=new LinkedList<>();
+         
+         for(int i =0;i<k;i++){
+             while(!deque.isEmpty() && arr[i]> arr[deque.peek()]){
+                 deque.removeLast();
+             }
              deque.add(i);
-        }
+         }
+         
 
+         for(int i=k;i<array.length;i++){
+             System.out.println(deque.peek());
+   
 
-       for (int i = k; i < arr.length; i++) {
+             while(!deque.isEmpty() && deque.peek()<=i-k){
+                 deque.removeFirst();
+             }
+             
+             while(!deque.isEmpty() && array[i]>array[deque.peek()]){
+                deque.removeLast();
+            }
+            deque.add(i);
 
-
-
-        // This prints the largest element from the previous window of the sliding
-        System.out.println(arr[deque.peek()]);
-
-         //This tells us the range 0f the window
-        while(!deque.isEmpty() && deque.peek()<=i-k){
-                     deque.removeFirst(); 
-                }
-         // This tell us the maxium of the window 
-        while (!deque.isEmpty() && arr[deque.peek()]<=arr[i]) {
-            deque.removeLast();
-        }
-
-
-        deque.addLast(arr[i]);
-           
-       }
-
-
-
-
-
+        
+         }
+        
     }
 }
