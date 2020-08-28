@@ -41,6 +41,8 @@ public class Solution {
         int[] parent = new int[graph.data];
         int[] disc = new int[graph.data];
         int[] low = new int[graph.data];
+        // For every node u, we need to find out the earliest visited vertex (the vertex with minimum discovery time)
+        // that can be reached from subtree rooted with u. So we maintain an additional array low[] which is defined as follows.
 
         Arrays.fill(visited, false);
         Arrays.fill(ap, false);
@@ -75,14 +77,20 @@ public class Solution {
 
                 low[i] = Math.min(low[i], low[v]);
 
+                // conditon for the root of the tree 
                 if (parent[i] == -1 && children > 1) {
                     ap[i] = true;
                 }
-
+                 
+                // this is the tricker condition with the backedge to the parent or any node with earlier discovery time
+                /// this means that the child node doesnot have a connection or backedge to the graph.
+                // we can just add a edge to the back of any vertxi 
                 if (parent[i] != -1 && disc[i] <= low[v])
                     ap[i] = true;
 
-            } else if (parent[v] != i) {
+            }
+            // This Condition is used  
+             else if (parent[v] != i) {
                 low[i] = Math.min(low[i], disc[v]);
             }
         }
