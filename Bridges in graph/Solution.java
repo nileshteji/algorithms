@@ -64,7 +64,7 @@ public class Solution {
         int children = 0;
         disc[i] = low[i] = ++time;
         List<Integer> list = g1.adj.get(i);
-
+                                                                    
         Iterator<Integer> listIterator = list.iterator();
         while (listIterator.hasNext()) {
             int v = listIterator.next();
