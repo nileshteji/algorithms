@@ -39,14 +39,15 @@ public class Solution {
         queue.add(a);
 
         while (queue.isEmpty() == false) {
-            cell temp = queue.poll();
+            a=queue.poll();
 
             int vertex = a.vetex;
 
 
 
             if(vertex==N.length-1){
-                System.out.println(temp.distance);
+                System.out.println("Reached");
+                System.out.println(a.distance);
                 return;
             }
 
@@ -54,7 +55,7 @@ public class Solution {
                 if(visited[i]==false){
                     cell tempOne=new cell();
                     // we reach here in throws not in distance .So we are calculating in throw;
-                    tempOne.distance=temp.distance+1;
+                    tempOne.distance=a.distance+1;
                     visited[i]=true;
 
                     // this is the case for no snake and ladder;
@@ -65,6 +66,7 @@ public class Solution {
                     else{
                         tempOne.vetex=N[i];
                     }
+                    queue.add(tempOne);
                 }
             }
 

@@ -41,6 +41,6 @@ public class Solution {
             prev.right=root;
         }
         prev=root;
-         convert(root.right);
+        convert(root.right);
     }
 }
