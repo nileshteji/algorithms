@@ -15,7 +15,7 @@ class Solution{
              while(!deque.isEmpty() && arr[i]> arr[deque.peek()]){
                  deque.removeLast();
              }
-             deque.add(i);
+             deque.addLastp(i);
          }
          
 
