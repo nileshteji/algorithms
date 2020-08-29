@@ -22,7 +22,7 @@ public class SelfSolution {
                 return false;
             }
         }
-
+       
         for (int i = row, j = col; i >= 0 && j < board.length; i--, j++) {
             if (board[i][j] == 1) {
                 return false;
