@@ -22,10 +22,9 @@ public class Solution {
         for(int length=2;length<=s.length();length++){
                 for(int i =0;i<s.length();i++){
                         int j =i+length-1;
-
                         if(length==2)
                             palindrome[i][j]=(s.charAt(i)==s.charAt(j));
-                        else
+                        else // This is to check the the substring in between the string
                             palindrome[i][j]= (s.charAt(i) ==s.charAt(j)) && palindrome[i+1][j-1];
             }
         }
