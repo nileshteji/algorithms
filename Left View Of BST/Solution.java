@@ -24,7 +24,7 @@ static Node root;
        }
     if(!arr[level]){
         System.out.println(root.data);
-        arr[level]=true;
+    arr[level]=true;
 
     }
     leftBST(root.left, level+1);
