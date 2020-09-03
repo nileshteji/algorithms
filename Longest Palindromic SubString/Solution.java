@@ -33,8 +33,7 @@ public class Solution {
               }
           }
         }
-
-
+        
         for(int length=3;length<=a.length();length++){
             for(int i =0;i<a.length()-length+1;i++){
                      int j =i+length-1;
