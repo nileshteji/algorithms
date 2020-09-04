@@ -34,7 +34,40 @@ for(int i=0;i<=m;i++){
 
 
 
+   // for printing of longest Common Subsequence
+
+
+
+
+
 }
+
+
+StringBuffer stringBuilder=new StringBuffer();
+   
+
+int i =m;
+int j=n;
+
+
+while(i>0 && j>0){
+  if(src[i-1]==des[j-1]){
+    stringBuilder.append(src[i-1]);
+    i--;
+    j--;
+  }
+
+  else{
+    if(dp[i-1][j]>dp[i][j-1]){
+      i--;
+    }
+    else{
+      j--;
+    }
+  }
+}
+
+System.out.println(stringBuilder.reverse().toString());
 
 return dp[m][n];
 
