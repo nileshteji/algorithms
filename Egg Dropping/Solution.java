@@ -15,7 +15,7 @@ public class EggSolver {
 
 
         // when we have one floor we only have to do one trial 
-        // when we have zero floors no trial will be held
+        // when we have zero floors no trial will be held 
         for (int i = 0; i < n + 1; i++) {
             results[i][1] = 1;
             results[i][0]=0;
