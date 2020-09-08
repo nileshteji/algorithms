@@ -1,38 +1,40 @@
+class MatrixChainMultiplication { 
+	
+	static int MatrixChainOrder(int p[], int n) 
+	{ 
+	
+		int m[][] = new int[n][n]; 
 
+		int i, j, k, L, q; 
 
-public class Solution {
- public static void main(String[] args) {
-    int [] array={
-        1, 2, 3, 4, 3
-      };
+		for (i = 1; i < n; i++) 
+			m[i][i] = 0; 
 
-      solve(array);
+	
+		for (L = 2; L < n; L++) { 
+			for (i = 1; i < n - L + 1; i++) { 
+				j = i + L - 1; 
+				if (j == n) 
+					continue; 
+				m[i][j] = Integer.MAX_VALUE; 
+				for (k = i; k <= j - 1; k++) { 
+					 q = m[i][k] + m[k + 1][j] + p[i - 1] * p[k] * p[j]; 
+					if (q < m[i][j]) 
+						m[i][j] = q; 
+				} 
+			} 
+		} 
 
- }   
- static void solve(int[] array){
-  int[][] dp=new int[array.length][array.length];
+		return m[1][n - 1]; 
+	} 
 
-  for(int i =1;i<dp.length;i++){
-    dp[i][i]=0;
-  }
+	// Driver program to test above function 
+	public static void main(String args[]) 
+	{ 
+		int arr[] = new int[] { 1, 2, 3, 4 }; 
+		int size = arr.length; 
 
-
-  for(int length=2;length<array.length;length++){
-      for(int i =1;i<=array.length-length;i++){
-          int j =i+length-1;
-
-          if(j==array.length){
-              continue;
-          }
-          for(int k =i;k<array.length;k++){
-              dp[i][j]=dp[i][k]+dp[k+1][j]*array[i-1]*array[k]*array[j];
-          }
-      }
-
-  }
-
-
-
-  System.out.println(dp[1][array.length-1]);
-}
-}
+		System.out.println("Minimum number of multiplications is " + MatrixChainOrder(arr, size)); 
+	} 
+} 
+/* This code is contributed by Rajat Mishra*/
