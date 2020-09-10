@@ -37,4 +37,4 @@ class MatrixChainMultiplication {
 		System.out.println("Minimum number of multiplications is " + MatrixChainOrder(arr, size)); 
 	} 
 } 
-/* This code is contributed by Rajat Mishra*/
+

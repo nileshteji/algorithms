@@ -60,7 +60,7 @@ class Graph {
         }
 
    
-        stack.push(new Integer(v));
+        stack.push(v);
     }
 
    

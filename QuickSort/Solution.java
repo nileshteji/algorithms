@@ -38,8 +38,6 @@ class QuickSort
             
             QuickSort obj=new QuickSort();
             obj.printArray(arr);
-
-			
 			sort(arr, low, pi-1); 
 			sort(arr, pi+1, high); 
 		} 
@@ -66,5 +64,4 @@ class QuickSort
 		System.out.println("sorted array"); 
 		printArray(arr); 
 	} 
-} 
-
+} yeh ky	
