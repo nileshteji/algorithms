@@ -90,7 +90,7 @@ public class Solution {
 
             }
             // This Condition is used  for changing the low time of the node if it is connected to another node other t
-        // than its parent 
+           // than its parent 
              else if (parent[v] != i) {
                 low[i] = Math.min(low[i], disc[v]);
             }

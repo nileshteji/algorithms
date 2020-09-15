@@ -1,7 +1,11 @@
 import java.util.*;
 
 class cell {
+
+    //this is the vertex number
     int vetex;
+
+    // this is the distance which is taken to reach this specific cell...
     int distance;
 
 }

@@ -45,7 +45,7 @@ public class Solution {
         int answer = 0;
 
         for (int i = 0; i < length; i++) {
-            /// i am an idiot bitch
+            
             if (!finalized[i] && distance[i] <= min) {
                 answer = i;
                 min = distance[i];
