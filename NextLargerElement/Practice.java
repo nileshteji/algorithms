@@ -1,4 +1,9 @@
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
+
+import sun.jvm.hotspot.utilities.IntegerEnum;
 
 
 
@@ -9,6 +14,7 @@ public class Practice {
     }
 
     static void find(int[] array) {
+    
         Stack<Integer> stack = new Stack<>();
         // if we want to return the array we can use index insted of the value
         // Similar like the Sliding window maxium

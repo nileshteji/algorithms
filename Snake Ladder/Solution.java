@@ -36,6 +36,7 @@ public class Solution {
     static void find(int[] N) {
         boolean[] visited = new boolean[N.length];
         Queue<cell> queue = new LinkedList<>();
+        
         cell a = new cell();
         a.distance = 0;
         a.vetex = 0;
