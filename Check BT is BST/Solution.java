@@ -16,25 +16,28 @@ public class Solution {
     static Node root;
 
     public static void main(String[] args) {
-        root=new Node(1);
-        root.left=new Node(2);
-        root.left.left=new Node(3);
-        root.right=new Node(3);
-
-        check(root,Integer.MIN_VALUE,);
+        root=new Node(3);
+        root.left=new Node(1);
+        root.right=new Node(4);
+        if(check(root, Integer.MIN_VALUE, Integer.MAX_VALUE)){
+            System.out.println("BST");
+        }
+        else{
+            System.out.println("NO BST");
+        }
     }
 
-    public boolen check(Node root,int min,int max){
+    public static boolean check(Node root, int min, int max) {
        if(root==null){
         return true;
     }
-    if(node.data<min || node.data>max){
+    if(root.data<min || root.data>max){
         return false;
     }
     else{
         // In this we check the left tree should have the minium value of the anything but the max value for the left subtree should be node.data-1
         // Similarly for the right subtree the minium value should be the root node and the maxium can be anything 
-        return check(node.left,min,node.data-1) && check(node.right,node.data+1,max);
+        return check(root.left,min,root.data-1) && check(root.right,root.data+1,max);
     }
 }
 

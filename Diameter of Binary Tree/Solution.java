@@ -27,7 +27,7 @@ class BinaryTree
 		int lheight = height(root.left); 
 		int rheight = height(root.right); 
 
-		
+		// in this conditon means we are taking the root as the left node and the right node 
 		int ldiameter = diameter(root.left); 
 		int rdiameter = diameter(root.right); 
 
