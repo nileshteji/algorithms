@@ -15,8 +15,7 @@ public class Solution
 		{ 
 			for (int i = l; i <= r; i++) 
 			{ 
-
-				// in this we will permuatate and then remove the permutation which we hjave did in then first step 
+					// in this we will permuatate and then remove the permutation which we hjave did in then first step 
 				str = swap(str,l,i); 
 				permute(str, l+1, r); 
 				str = swap(str,l,i); 

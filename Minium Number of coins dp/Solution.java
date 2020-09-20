@@ -20,7 +20,7 @@ public class Solution {
         }
 
         for (int j = 1; j <= value; j++) {
-            dp[1][j] = (j % array[0] == 0) ? j / array[0] : Integer.MAX_VALUE;
+            dp[1][j] = (j % array[0] == 0) ? j%array[0] / array[0] : Integer.MAX_VALUE;
         }
 
         for (int i = 2; i < array.length; i++) {

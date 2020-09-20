@@ -34,6 +34,9 @@ static void find(int[] array,int start,int end){
 
 
 
+       Math
+
+
     }
   }
 

@@ -9,7 +9,6 @@ class Node {
         this.data = data;
     }
 }
-
 public class Solution {
 
     static Node root;

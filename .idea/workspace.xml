@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40db49c2-a4ae-4959-8511-45575362b0c4" name="Default Changelist" comment="" />
+    <list default="true" id="40db49c2-a4ae-4959-8511-45575362b0c4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bottom View of BST/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bottom View of BST/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minium Number of coins dp/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Minium Number of coins dp/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NextLargerElement/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/NextLargerElement/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Print Permutation/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Print Permutation/Solution.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +62,8 @@
       <workItem from="1595521257033" duration="508000" />
       <workItem from="1595521795287" duration="647000" />
       <workItem from="1596339525038" duration="24000" />
+      <workItem from="1600553702535" duration="63000" />
+      <workItem from="1600554132352" duration="23000" />
     </task>
     <servers />
   </component>
@@ -79,6 +87,10 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="496" y="208" key="#Plugins/0.0.1792.1120@0.0.1792.1120" timestamp="1595521647884" />
+    <state x="360" y="233" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600553758512">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="360" y="233" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1600553758512" />
     <state x="584" y="303" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595521073636">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -87,11 +99,12 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="397" y="199" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1595429254190" />
-    <state x="257" y="201" key="new project wizard" timestamp="1596339547886">
-      <screen x="0" y="23" width="1742" height="1097" />
+    <state x="264" y="201" key="new project wizard" timestamp="1600554152833">
+      <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="264" y="182" key="new project wizard/0.0.1792.1120@0.0.1792.1120" timestamp="1595521745299" />
     <state x="257" y="201" key="new project wizard/0.23.1742.1097@0.23.1742.1097" timestamp="1596339547886" />
+    <state x="264" y="201" key="new project wizard/0.23.1792.1097@0.23.1792.1097" timestamp="1600554152833" />
     <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1595521605245">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
