@@ -20,7 +20,11 @@ public class Solution {
             list.add(new HashMap<>());
             for(int j =0;j<i;j++){
                 
+            
+            
+            
+            
             }
         }
-    }
+    }       
 }
