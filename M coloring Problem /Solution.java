@@ -35,7 +35,8 @@ public class Solution {
 
                 if (graphColoringUtility(graph, v + 1, m)) {
                     return true;
-                } else {
+                } 
+                else {
                     colors[v] = 0;
                 }
             }

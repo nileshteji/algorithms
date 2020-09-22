@@ -11,15 +11,17 @@ data=val;
 
     public ListNode remove(ListNode head,int n){
   
+    // this is a dummy node 
     ListNode start = new ListNode(0);
-    ListNode n1 = start, n2 = start;
-    n2.next = head;
+    start.next=head;
+    ListNode n1 =start, n2 = start;
     
-    for(int i =0;i<n+1;i++){
+    
+    for(int i =0;i<n;i++){
         n2 = n2.next; // trying o create gab n between two pointers
     }
     
-    while(n2 != null){
+    while(n2 .next != null){
         n1 = n1.next;
         n2 = n2.next;
     }
@@ -30,7 +32,7 @@ data=val;
 }
 
 public static void main(String[] args) {
-
+    
 }
 
 }

@@ -61,8 +61,8 @@ public class Solution {
 
 
     static void topoUtil(boolean[] array,Stack<Integer> stack,int i ){
-
-       array[i]=true;
+    
+        array[i]=true;
       Iterator<Integer> iterator= g.adj[i].iterator();
       //this it self takes cares of the null factor
       while(iterator.hasNext()){

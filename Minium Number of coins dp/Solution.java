@@ -28,6 +28,7 @@ public class Solution {
                 if (array[i - 1] > j) {
                     dp[i][j] = dp[i - 1][j];
                 } else {
+                    // usin i because the coins can be broken into other denominations
                     dp[i][j] =Math.min(dp[i - 1][j], 1+dp[i][j - array[i - 1]]);
                 }
 
