@@ -12,7 +12,7 @@ public class Solution {
 
         while(low<=high){
             
-            int mid=low+high/2;
+            int mid=low+(high-low/2);
 
             if(array[mid]==c){
                 System.out.println(mid+1);
@@ -22,11 +22,11 @@ public class Solution {
             else if((int) array[mid] > (int)c){
                    res=mid;
                    high=mid-1;
-                   System.out.println(res);    
+                  
             }
             else if((int) array[mid] < (int) c){
                 low=mid+1;
-                System.out.println(res);
+               
             }
 
         }
