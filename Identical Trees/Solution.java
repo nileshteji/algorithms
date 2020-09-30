@@ -25,11 +25,11 @@ class BinaryTree
 	
 		if (a != null && b != null) 
 			return (a.data == b.data 
-					&& identicalTrees(a.left, b.right) 
-					&& identicalTrees(a.right, b.left)); 
+						&& identicalTrees(a.left, b.right) 
+						&& identicalTrees(a.right, b.left)); 
 
-		return false; 
-	} 
+			return false; 
+		} 
 
    public static void main(String[] args) 
 	{ 
