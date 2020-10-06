@@ -19,7 +19,7 @@ public class Solution {
         }
 
         printInorder(root.left);
-        System.out.println(root.data);
+        System.out.print(root.data + " ");
         printInorder(root.right);
 
     }
@@ -28,12 +28,23 @@ public class Solution {
         if (root == null)
             return;
 
-        System.out.println(root.data);
+        System.out.print(root.data + " ");
 
         printPreOrder(root.left);
         printPreOrder(root.right);
 
     }
+    
+    static void printPostorder(Node root) 
+    { 
+        if (root == null) 
+            return; 
+  
+        printPostorder(root.left); 
+        printPostorder(root.right); 
+  
+        System.out.print(root.data + " "); 
+    } 
 
     public static void main(String[] args) {
         Node root = new Node(1);
@@ -42,5 +53,9 @@ public class Solution {
         root.left.right = new Node(4);
         root.right = new Node(5);
         printInorder(root);
+        System.out.print("\n"); 
+        printPreOrder(root);
+        System.out.print("\n"); 
+        printPostorder(root);
     }
 }
