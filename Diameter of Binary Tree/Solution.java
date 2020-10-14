@@ -32,7 +32,7 @@ class BinaryTree
 		int rdiameter = diameter(root.right); 
 
 	
-		return Math.max(lheight + rheight + 1, 
+		return Math.max(lheight + rheight + 1,  
 						Math.max(ldiameter, rdiameter)); 
 
 	} 
