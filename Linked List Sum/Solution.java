@@ -37,9 +37,11 @@ class LinkedList {
 			carry = (sum >= 10) ? 1 : 0;
 			sum = sum % 10;
 			temp = new Node(sum);
+
 			if (res == null) {
 				res = temp;
 			}
+			
 			else {
 				prev.next = temp;
 			}

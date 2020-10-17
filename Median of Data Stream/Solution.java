@@ -12,8 +12,7 @@ public class MedianMaintain
 		double med = a[0]; 
 		
 		// max heap to store the smaller half elements 
-		PriorityQueue<Integer> smaller = new PriorityQueue<> 
-		(Collections.reverseOrder()); 
+		PriorityQueue<Integer> smaller = new PriorityQueue<> (Collections.reverseOrder()); 
 		
 		// min-heap to store the greater half elements 
 		PriorityQueue<Integer> greater = new PriorityQueue<>(); 

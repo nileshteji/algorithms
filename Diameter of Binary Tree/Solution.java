@@ -1,3 +1,4 @@
+import java.time.temporal.Temporal;
 
 class Node 
 { 
@@ -15,6 +16,7 @@ class Node
 class BinaryTree 
 { 
 	Node root; 
+int res;
 
 	
 	int diameter(Node root) 
@@ -23,19 +25,22 @@ class BinaryTree
 		if (root == null) 
 			return 0; 
 
+
+
+		
+		
 		
 		int lheight = height(root.left); 
 		int rheight = height(root.right); 
+		int temp=Math.max(lheight, rheight)+1;
+		int ans=Math.max(temp, lheight+rheight+1);
+        res=Math.max(res, ans);
+		return temp;
 
 		// in this conditon means we are taking the root as the left node and the right node 
-		int ldiameter = diameter(root.left); 
-		int rdiameter = diameter(root.right); 
-
 	
-		return Math.max(lheight + rheight + 1,  
-						Math.max(ldiameter, rdiameter)); 
 
-	} 
+	}
 
 	
 	int diameter() 
@@ -63,7 +68,8 @@ class BinaryTree
 		tree.root.left.left = new Node(4); 
 		tree.root.left.right = new Node(5); 
 
-		System.out.println("The diameter of given binary tree is : "
-						+ tree.diameter()); 
+		
+						 tree.diameter();
+						 System.out.println(tree.res);
 	} 
 } 

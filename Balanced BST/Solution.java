@@ -31,9 +31,9 @@ public static void main(String[] args) {
 
     static boolean isBalanced(Node root){
 
-if(root==null){
+     if(root==null){
     return true;
-}
+       }
 else{
 
 
