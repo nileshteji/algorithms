@@ -12,7 +12,7 @@ class Solution{
          Deque<Integer> deque=new LinkedList<>();
          
          for(int i =0;i<k;i++){
-             while(!deque.isEmpty() && arr[i]> arr[deque.peek()]){
+             while(!deque.isEmpty() && arr[i]> arr[deque.peekLast()]){
                  deque.removeLast();
              }
              deque.addLast(i);
@@ -26,7 +26,7 @@ class Solution{
                  deque.removeFirst();
              }
              
-             while(!deque.isEmpty() && array[i]>array[deque.peek()]){
+             while(!deque.isEmpty() && array[i]>array[deque.peekLast()]){
                 deque.removeLast();
             }
             deque.add(i);
