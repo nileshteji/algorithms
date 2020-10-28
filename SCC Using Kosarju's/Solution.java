@@ -38,20 +38,20 @@ class Graph {
     Graph getTranspose() {
         Graph g = new Graph(V);
         for (int v = 0; v < V; v++) {
-       
+
             Iterator<Integer> i = adj[v].listIterator();
             while (i.hasNext())
-            // chaanging the direction of each vertex 
+            // chaanging the direction of each vertex
                 g.adj[i.next()].add(v);
         }
         return g;
     }
 
     void fillOrder(int v, boolean visited[], Stack stack) {
-        
+
         visited[v] = true;
 
-      
+
         Iterator<Integer> i = adj[v].iterator();
         while (i.hasNext()) {
             int n = i.next();
@@ -59,11 +59,11 @@ class Graph {
                 fillOrder(n, visited, stack);
         }
 
-   
+
         stack.push(v);
     }
 
-   
+
     void printSCCs() {
         Stack stack = new Stack();
 
@@ -71,20 +71,20 @@ class Graph {
         for (int i = 0; i < V; i++)
             visited[i] = false;
 
-        
+
         for (int i = 0; i < V; i++)
             if (visited[i] == false)
                 fillOrder(i, visited, stack);
 
-      
+
         Graph gr = getTranspose();
 
- 
+
         for (int i = 0; i < V; i++)
             visited[i] = false;
 
         while (stack.empty() == false) {
-         
+
             int v = (int) stack.pop();
 
             if (visited[v] == false) {
@@ -94,9 +94,13 @@ class Graph {
         }
     }
 
- 
+
     public static void main(String args[]) {
-       
+
+        // TOPO Sort
+        // Transpose
+        // DFS
+
         Graph g = new Graph(5);
         g.addEdge(1, 0);
         g.addEdge(0, 2);

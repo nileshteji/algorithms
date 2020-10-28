@@ -85,6 +85,8 @@ public class Solution {
                 // this is the tricker condition with the backedge to the parent or any node with earlier discovery time
                 /// this means that the child node doesnot have a connection or backedge to the graph.
                 // we can just add a edge to the back of any vertxi
+                // this is the condition when there is a backedge to to a previous
+                
                 if (parent[i] != -1 && disc[i] <= low[v])
                     ap[i] = true;
 
