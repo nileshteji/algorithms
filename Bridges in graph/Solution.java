@@ -66,7 +66,7 @@ public class Solution {
         int children = 0;
         disc[i] = low[i] = ++time;
         List<Integer> list = g1.adj.get(i);
-                                                                    
+
         Iterator<Integer> listIterator = list.iterator();
         while (listIterator.hasNext()) {
             int v = listIterator.next();
@@ -77,20 +77,20 @@ public class Solution {
 
                 low[i] = Math.min(low[i], low[v]);
 
-                // conditon for the root of the tree 
+                // conditon for the root of the tree
                 if (parent[i] == -1 && children > 1) {
                     ap[i] = true;
                 }
-                 
+
                 // this is the tricker condition with the backedge to the parent or any node with earlier discovery time
                 /// this means that the child node doesnot have a connection or backedge to the graph.
-                // we can just add a edge to the back of any vertxi 
+                // we can just add a edge to the back of any vertxi
                 if (parent[i] != -1 && disc[i] <= low[v])
                     ap[i] = true;
 
             }
             // This Condition is used  for changing the low time of the node if it is connected to another node other t
-           // than its parent 
+           // than its parent
              else if (parent[v] != i) {
                 low[i] = Math.min(low[i], disc[v]);
             }
