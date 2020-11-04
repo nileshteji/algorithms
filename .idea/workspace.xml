@@ -20,11 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40db49c2-a4ae-4959-8511-45575362b0c4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bottom View of BST/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bottom View of BST/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minium Number of coins dp/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Minium Number of coins dp/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NextLargerElement/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/NextLargerElement/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Print Permutation/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Print Permutation/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SubArray Sum/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/SubArray Sum/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +29,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="gke_linear-poet-272507_us-central1-c_kube-cluster" />
+    <option name="namespace" value="default" />
   </component>
   <component name="ProjectId" id="1f2ud4lOGoqcJmmPXYttJVXpqKZ" />
   <component name="ProjectViewState">
@@ -47,6 +47,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -64,11 +65,12 @@
       <workItem from="1596339525038" duration="24000" />
       <workItem from="1600553702535" duration="63000" />
       <workItem from="1600554132352" duration="23000" />
+      <workItem from="1604510081125" duration="48000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
