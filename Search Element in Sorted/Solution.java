@@ -2,10 +2,10 @@ class Solution{
     public static void main(String[] args) {
         int[] array={1,2,3,5,10,10,10,10,12};
         solve(array, 10);
-       
+
     }
     public static void solve(int[] array,int key){
-    
+
         int low=0;
         int high=array.length;
         int count=0;
@@ -14,7 +14,7 @@ class Solution{
         // o(logn*3)=o(logn)
         while(low<=high){
 
-            int mid =low+high/2;
+            int mid =low+((high-low)/2);
             System.out.println(mid);
 
 
@@ -25,9 +25,9 @@ class Solution{
                     count++;
                     mid--;
                }
-             
+
                 mid=temp;
-                
+
                 while(array[mid]==key){
                     count++;
                     mid++;
@@ -47,15 +47,15 @@ class Solution{
             }
 
 
-               
+
             }
-             
-           
+
+
 
 
         }
 
-        
-    
-    
+
+
+
     }

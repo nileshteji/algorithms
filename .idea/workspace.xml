@@ -19,8 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40db49c2-a4ae-4959-8511-45575362b0c4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/SubArray Sum/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/SubArray Sum/Solution.java" afterDir="false" />
+    <list default="true" id="40db49c2-a4ae-4959-8511-45575362b0c4" name="Default Changelist" comment="Refractor">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +45,26 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -66,7 +85,16 @@
       <workItem from="1600553702535" duration="63000" />
       <workItem from="1600554132352" duration="23000" />
       <workItem from="1604510081125" duration="48000" />
+      <workItem from="1604513093531" duration="473000" />
     </task>
+    <task id="LOCAL-00001" summary="Refractor">
+      <created>1604513115485</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604513115485</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,32 +112,23 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refractor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refractor" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="496" y="208" key="#Plugins" timestamp="1595521647884">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state x="496" y="208" key="#Plugins/0.0.1792.1120@0.0.1792.1120" timestamp="1595521647884" />
     <state x="360" y="233" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600553758512">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="360" y="233" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1600553758512" />
-    <state x="584" y="303" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595521073636">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state x="526" y="-789" key="Vcs.Push.Dialog.v2" timestamp="1604513125975">
+      <screen x="-34" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="584" y="303" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1595521073636" />
-    <state x="397" y="199" key="SettingsEditor" timestamp="1595429254190">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state x="397" y="199" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1595429254190" />
+    <state x="526" y="-789" key="Vcs.Push.Dialog.v2/-34.-1057.1920.1057/0.23.1792.1097@-34.-1057.1920.1057" timestamp="1604513125975" />
     <state x="264" y="201" key="new project wizard" timestamp="1600554152833">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="264" y="182" key="new project wizard/0.0.1792.1120@0.0.1792.1120" timestamp="1595521745299" />
     <state x="257" y="201" key="new project wizard/0.23.1742.1097@0.23.1742.1097" timestamp="1596339547886" />
     <state x="264" y="201" key="new project wizard/0.23.1792.1097@0.23.1792.1097" timestamp="1600554152833" />
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1595521605245">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1595521605245" />
   </component>
 </project>
