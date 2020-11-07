@@ -10,29 +10,13 @@ class Solution{
         int high=array.length;
         int count=0;
 
-
-        // o(logn*3)=o(logn)
         while(low<=high){
 
             int mid =low+((high-low)/2);
             System.out.println(mid);
 
-
-
             if(array[mid]==key){
                 int temp=mid;
-               while(array[mid]==key){
-                    count++;
-                    mid--;
-               }
-
-                mid=temp;
-
-                while(array[mid]==key){
-                    count++;
-                    mid++;
-                }
-
                 System.out.println(count-1);
                 return;
             }

@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40db49c2-a4ae-4959-8511-45575362b0c4" name="Default Changelist" comment="Refractor">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search Element in Sorted/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Search Element in Sorted/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,20 +53,10 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -86,6 +78,8 @@
       <workItem from="1600554132352" duration="23000" />
       <workItem from="1604510081125" duration="48000" />
       <workItem from="1604513093531" duration="473000" />
+      <workItem from="1604595248116" duration="39000" />
+      <workItem from="1604641224173" duration="78000" />
     </task>
     <task id="LOCAL-00001" summary="Refractor">
       <created>1604513115485</created>
@@ -121,6 +115,10 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="360" y="233" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1600553758512" />
+    <state x="384" y="153" key="SettingsEditor" timestamp="1604641294809">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="384" y="153" key="SettingsEditor/-34.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1604641294809" />
     <state x="526" y="-789" key="Vcs.Push.Dialog.v2" timestamp="1604513125975">
       <screen x="-34" y="-1057" width="1920" height="1057" />
     </state>
