@@ -1,9 +1,6 @@
 
-
 // what is BT :Binary Tree it is a normal tree which can have upto max 2 children Node;
 // whereas BST is the Binary Search Tree which follow the min max contraint
-
-
 class Node{
     Node left;
     Node right;
@@ -36,7 +33,7 @@ public class Solution {
     }
     else{
         // In this we check the left tree should have the minium value of the anything but the max value for the left subtree should be node.data-1
-        // Similarly for the right subtree the minium value should be the root node and the maxium can be anything 
+        // Similarly for the right subtree the minium value should be the root node and the maxium can be anything
         return check(root.left,min,root.data-1) && check(root.right,root.data+1,max);
     }
 }

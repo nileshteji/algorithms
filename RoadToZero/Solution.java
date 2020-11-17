@@ -7,9 +7,10 @@ import java.util.Scanner;
 
 public class Solution {
    static int cost=0;
-    
+
+
 public static void main(String[] args) {
-    
+
 ArrayList<Integer> arrayList=new ArrayList<Integer>();
     Scanner obj=new Scanner(System.in);
     int t=obj.nextInt();
@@ -32,8 +33,8 @@ ArrayList<Integer> arrayList=new ArrayList<Integer>();
 }
 
 
-//a only decreases/increases one varibale 
-//b decreases both variable 
+//a only decreases/increases one varibale
+//b decreases both variable
 //Minimisation and Maximisation
 static int  solve (int x,int y,int a,int b){
 
@@ -42,7 +43,7 @@ if(x==0 && y==0){
 }
 else if(x==0 && y==1 || x==1 && y==0){
     return cost+a;
-    
+
 }
 
 else if(x==0 && y!=0 || x!=0 && y==0){

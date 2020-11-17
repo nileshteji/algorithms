@@ -9,7 +9,7 @@ class Solution{
         int low=0;
         int high=array.length;
         int count=0;
-
+`
         while(low<=high){
 
             int mid =low+((high-low)/2);
@@ -17,6 +17,7 @@ class Solution{
 
             if(array[mid]==key){
                 int temp=mid;
+
                 System.out.println(count-1);
                 return;
             }
