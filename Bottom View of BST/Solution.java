@@ -14,9 +14,6 @@ public class Solution {
     static Node root;
     static HashMap<Integer,Integer> values=new HashMap<>();
 
-
-
-
     static void bottom(Node root,int hd){
 
     if(root==null)
