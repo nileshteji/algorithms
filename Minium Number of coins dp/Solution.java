@@ -12,7 +12,7 @@ public class Solution {
 
         // This means we have no coin adn extracting a value from a no coin is like hell
         for (int i = 0; i <= value; i++) {
-            dp[0][i] = -1;
+            dp[0][i] = Integer.MAX_VALUE;
 
         }
         for (int i = 1; i <= array.length; i++) {
@@ -35,7 +35,7 @@ public class Solution {
 
             }
         }
-       
+
         for(int[] arrayOne:dp){
             for(int i : arrayOne){
                 System.out.print(i);
