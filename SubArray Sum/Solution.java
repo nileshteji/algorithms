@@ -31,7 +31,7 @@ Also, prints the result */
 				curr_sum = curr_sum + arr[i];
 		}
 
-		System.out.println("No subarray found");
+		System.out.println("No subarrays found!");
 		return 0;
 	}
 
