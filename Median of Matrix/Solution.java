@@ -1,6 +1,6 @@
 
-// Java program to find median of a matrix 
-// sorted row wise 
+// Java program to find median of a matrix
+// sorted row wise
 import java.util.Arrays;
 
 public class Solution {

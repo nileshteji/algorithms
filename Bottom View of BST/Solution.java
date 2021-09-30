@@ -14,16 +14,15 @@ public class Solution {
     static Node root;
     static HashMap<Integer,Integer> values=new HashMap<>();
 
-
-
-
-    static void bottom(Node root,int hd){
+    // static void bottom(Node root,int hd){
 
     if(root==null)
     {
         return;
     }
     else{
+
+
         // just add putufAbsent function to use the topmost view of binary tree phew simple
         values.put(hd,root.data);
         bottom(root.left, hd-1);

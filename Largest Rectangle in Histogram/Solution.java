@@ -24,13 +24,13 @@ public class Solution {
                 area = heights[top] * (stack.isEmpty() ? i : i - stack.peek() - 1);
                 max_Area = Math.max(max_Area, area);
             }
-            Diwhile (!stack.isEmpty()) {
+        }
+                while (!stack.isEmpty()) {
             top = stack.peek();
             stack.pop();
             area = heights[top] * (stack.isEmpty() ? i : i - stack.peek() - 1);
             max_Area = Math.max(max_Area, area);
         }
-
-        return max_Area;
-    }
+    return max_Area;
+}
 }

@@ -3,36 +3,35 @@ import java.util.Arrays;
 
 /**
  * @author Nilesh Teji
- * 
- * 
- * 
- * 
- * 
  */
+
 
 public class Solution {
     public static void main(String[] args) {
-        int graph[][] = new int[][] { 
-            { 0, 4, 0, 0, 0, 0, 0, 8, 0 }, 
+    int graph[][] = new int[][] {
+            { 0, 4, 0, 0, 0, 0, 0, 8, 0 },
             { 4, 0, 8, 0, 0, 0, 0, 11, 0 },
             { 0, 8, 0, 7, 0, 4, 0, 0, 2 },
-            { 0, 0, 7, 0, 9, 14, 0, 0, 0 }, 
+            { 0, 0, 7, 0, 9, 14, 0, 0, 0 },
             { 0, 0, 0, 9, 0, 10, 0, 0, 0 },
-            { 0, 0, 4, 14, 10, 0, 2, 0, 0 }, 
-            { 0, 0, 0, 0, 0, 2, 0, 1, 6 }, 
+            { 0, 0, 4, 14, 10, 0, 2, 0, 0 },
+            { 0, 0, 0, 0, 0, 2, 0, 1, 6 },
             { 8, 11, 0, 0, 0, 0, 1, 0, 7 },
-            { 0, 0, 2, 0, 0, 0, 6, 7, 0 } 
+            { 0, 0, 2, 0, 0, 0, 6, 7, 0 }
         };
+
 
         dijsktra(graph, 0);
 
         // System.out.println(graph.length + " " + graph[0].length);
 
+
+
     }
 
 
     /**
-     * 
+     *
      * @param distance  this is array which contains the distance from the source to
      *                  i in the array index[i];
      * @param finalized this help is to find the distance of which node is finalized
@@ -45,7 +44,7 @@ public class Solution {
         int answer = 0;
 
         for (int i = 0; i < length; i++) {
-            
+
             if (!finalized[i] && distance[i] <= min) {
                 answer = i;
                 min = distance[i];
@@ -71,15 +70,15 @@ public class Solution {
         for(int i =0;i<graph.length;i++){
 
             /**
-             * we will extract the minium value from the non fincalized vertices and make it finalized 
-             * 
+             * we will extract the minium value from the non fincalized vertices and make it finalized
+             *
              */
         int u = findMinium(distance, finalized, graph.length);
 
         finalized[u] = true;
 
         // this will undergo every adacent vertex of the u vertex
-        // if we use a adjacency list we will be able to remove this loop 
+        // if we use a adjacency list we will be able to remove this loop
         for (int j = 0; j < graph.length; j++) {
 
             // Explaination to the if condition

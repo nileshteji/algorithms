@@ -11,23 +11,18 @@ public class Solution {
             int res=-1;
 
             while(low <= high){
-                int mid=low+high/2;
+                int mid= low + (high-low)/2;
 
                  if(array[mid]==key){
                     res=mid;
-                   /// System.out.println(res);
                     return;
                 }
-                if(array[low]>key){
-                    System.out.println(res);
-                    return;
-                }
+             
                 else if(array[mid]>key){
-                    //System.out.println("HIGH"+array[res]);
                     high=mid-1;
                     
                 }
-                else{
+                else if (array[mid]<key){
                     res=mid;
                     low=mid+1;
                     //System.out.println(array[res]);

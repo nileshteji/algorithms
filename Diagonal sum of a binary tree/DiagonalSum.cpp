@@ -32,7 +32,7 @@ void diagonalSumUtil(node* root,
 	if(!root) 
 		return; 
 		
-	diagonalSum[vd] += root->data; 
+	diagonalSum[vd] += root -> data; 
 
     // we increase the vertical distance in case of left child
 	diagonalSumUtil(root->left, vd + 1, diagonalSum); 

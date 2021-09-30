@@ -6,13 +6,17 @@ class Solution{
         int[] array={
             1,2,3,1,4,5,2,3,6
         };
+
+        solve(array,3);
+        
+
     }
-    static void sliding(int[] array,int k){
+    static void solve(int[] array,int k){
         
          Deque<Integer> deque=new LinkedList<>();
          
          for(int i =0;i<k;i++){
-             while(!deque.isEmpty() && arr[i]> arr[deque.peek()]){
+             while(!deque.isEmpty() && array[i]> array[deque.peekLast()]){
                  deque.removeLast();
              }
              deque.addLast(i);
@@ -26,7 +30,7 @@ class Solution{
                  deque.removeFirst();
              }
              
-             while(!deque.isEmpty() && array[i]>array[deque.peek()]){
+             while(!deque.isEmpty() && array[i]>array[deque.peekLast()]){
                 deque.removeLast();
             }
             deque.add(i);

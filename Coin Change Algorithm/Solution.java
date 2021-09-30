@@ -1,31 +1,42 @@
-import java.util.Arrays;
-
-class CoinChange
-{
-	static long countWays(int S[], int m, int n)
-	{
-
-		
-
-		long[] table = new long[n+1];
-
-		Arrays.fill(table, 0); //O(n)
-    table[0] = 1;
+class Solution{
+	public static void main(String[] args) {
+		int[] coins={1,4,6};
+		int sum=7;
+	int a=	solve(coins, sum);
+System.err.println(a);
 
 
-		for (int i=0; i<m; i++)
-			for (int j=S[i]; j<=n; j++)
-				table[j] += table[j-S[i]];
 
-		return table[n];
 	}
 
 
-	public static void main(String args[])
-	{
-		int arr[] = {1, 2, 3};
-		int m = arr.length;
-		int n = 4;
-		System.out.println(countWays(arr, m, n));
+
+	// Calculate the total number of ways to give the change 
+
+	public static int solve(int[] coins,int sum){
+		int[][] matrix=new int[coins.length+1][sum+1];
+
+		for(int i =1;i<matrix[0].length;i++){
+			matrix[0][i]=0;
+		}
+
+		for(int i =0;i<matrix.length;i++){
+			matrix[i][0]=1;
+		}
+
+		for(int i =1;i<matrix.length;i++){
+			for(int j=1;j<matrix[0].length;j++){
+
+                         if(coins[i-1]<=j){
+                            matrix[i][j]=matrix[i-1][j]+matrix[i][j-coins[i-1]];
+						 }
+						 else{
+							 matrix[i][j]=matrix[i-1][j];
+						 }
+				}
+			}
+			return matrix[coins.length][sum];
+		}
+
+
 	}
-}

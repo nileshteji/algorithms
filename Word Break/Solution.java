@@ -1,9 +1,5 @@
 import java.util.ArrayList;
 
-import org.graalvm.compiler.word.Word;
-
-import jdk.incubator.jpackage.internal.MacBaseInstallerBundler;
-
 public class Solution {
  public static void main(String[] args) {
     String dictionary[] = { "mobile", "samsung", "sam", 
